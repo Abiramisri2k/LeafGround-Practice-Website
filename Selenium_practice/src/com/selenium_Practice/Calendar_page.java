@@ -17,16 +17,9 @@ public class Calendar_page {
 
 		driver.get("http://www.leafground.com/pages/Calendar.html");
 		
-		WebElement calendar = driver.findElement(By.xpath("//*[@id=\"datepicker\"]"));
-		calendar.click();
-		
-		WebElement nextelement = driver.findElement(By.xpath("//a[@title='Next']"));
-		nextelement.click();
-		
-		WebElement gotobtn = driver.findElement(By.xpath("//a[contains(text(),'10')]"));
-		gotobtn.click();
-		
-
-	}
+		driver.findElement(By.xpath("//*[@id=\"datepicker\"]")).click();
+	        driver.findElement(By.xpath("//a[@title='Next']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'10')]")).click();
+		}
 
 }
